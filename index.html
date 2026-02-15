@@ -1,37 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Welcome</title>
+<head>
+  <meta charset="UTF-8" />
+  <title>Ore Storage</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap"
-      rel="stylesheet"
-    />
+  <!-- Montserrat Bold -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
 
-    <style>
-      html, body {
-        margin: 0;
-        width: 100%;
-        height: 100%;
-        background: black;
-        color: white;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-family: 'Montserrat', system-ui, sans-serif;
-      }
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Ore Storage</h1>
 
-      h1 {
-        font-weight: 700;
-        font-size: 3rem;
-      }
-    </style>
-  </head>
-  <body>
-    <h1>Welcome!</h1>
-  </body>
+  <div id="app">
+    <div class="column" id="worlds"></div>
+    <div class="column" id="layers"></div>
+    <div class="column" id="ores"></div>
+    <div class="column" id="tiers"></div>
+  </div>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
 </html>
